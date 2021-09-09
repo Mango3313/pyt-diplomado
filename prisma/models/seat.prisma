@@ -1,0 +1,14 @@
+type Seat {
+    id: ID! @id
+    letter: Letters!
+    seatNumber: Int!
+}
+enum Letters {
+    A
+    B
+    C
+    D
+    F
+    J
+    K
+}

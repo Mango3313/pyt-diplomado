@@ -1,0 +1,7 @@
+type Ticket {
+    id: ID! @id
+    ticketToken: String
+    user: Order @relation(link: INLINE)
+    movie: Movie @relation(link: INLINE)
+    createdAt: DateTime! @createdAt
+}

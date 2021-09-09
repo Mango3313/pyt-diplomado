@@ -1,0 +1,17 @@
+type Ticketoffice {
+    id: ID! @id
+    productType: Products!
+    userType: Users!
+    user: Membership @relation(link: INLINE)
+}
+enum Products {
+    Movie
+    Candy
+    Popcorn
+    Membership
+}
+enum Users {
+    Adult
+    Kid
+
+}

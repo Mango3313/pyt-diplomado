@@ -2,5 +2,7 @@ type Order implements Node {
      id: ID! @id
      createdAt: DateTime! @createdAt
      updatedAt: DateTime! @updatedAt
+     movie: Movie @relation(link: INLINE)
      user: User @relation(link: INLINE)
+     employee: Employee @relation(link: INLINE)
 }

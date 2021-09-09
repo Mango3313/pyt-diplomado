@@ -1,0 +1,6 @@
+type Membership {
+    id: ID! @id
+    user: User @relation(link: INLINE)
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+}

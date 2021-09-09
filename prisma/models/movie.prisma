@@ -1,0 +1,13 @@
+type Movie {
+    id: ID! @id
+    name: String!
+    durationMin: Int!
+    description: String
+    rating: Rates!
+}
+enum Rates {
+    A
+    B
+    C
+    R
+}

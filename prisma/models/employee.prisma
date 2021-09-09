@@ -1,0 +1,9 @@
+type Employee {
+    id: ID! @id
+    name: String
+    curp: String
+    nss: String
+    rfc: String
+    phoneNum: String
+    mail: String
+}

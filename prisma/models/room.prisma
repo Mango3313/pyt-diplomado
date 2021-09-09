@@ -1,0 +1,13 @@
+type Room {
+    id: ID! @id
+    name: String
+    nSeats: Int
+    seats: [Seat!]! @relation(link: INLINE)
+    type: RoomType! @default(value: IMAX)
+}
+enum RoomType {
+    FOURD
+    THREED
+    IMAX
+    KIDS
+}

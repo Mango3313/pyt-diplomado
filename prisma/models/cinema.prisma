@@ -1,0 +1,7 @@
+type Complejo {
+    id: ID! @id
+    name: String
+    nRooms: Int!
+    rooms: [Room!]! @relation(link: INLINE)
+    employees: [Employee!] @relation(link: INLINE)
+}
